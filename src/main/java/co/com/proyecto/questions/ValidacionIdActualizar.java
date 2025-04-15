@@ -5,16 +5,16 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.annotations.Subject;
 
-public class ValidacionId implements Question<Integer> {
+public class ValidacionIdActualizar implements Question<Integer> {
 
     @Override
     @Subject("Validacion del id")
     public Integer answeredBy(Actor actor) {
-        
-        return SerenityRest.lastResponse().jsonPath().get("id");
+        String id= SerenityRest.lastResponse().jsonPath().get("id").toString();
+        return Integer.parseInt(id);
     }
 
-    public static ValidacionId  response() {
-        return new ValidacionId ();
+    public static ValidacionIdActualizar  response() {
+        return new ValidacionIdActualizar ();
     }
 }

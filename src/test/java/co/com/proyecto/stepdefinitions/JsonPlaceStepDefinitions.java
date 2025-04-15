@@ -9,6 +9,7 @@ import net.serenitybdd.screenplay.rest.abilities.CallAnApi;
 
 import co.com.proyecto.models.Informacion;
 import co.com.proyecto.questions.ValidacionId;
+import co.com.proyecto.questions.ValidacionIdActualizar;
 import co.com.proyecto.enums.*;
 import co.com.proyecto.exceptions.Exceptions;
 import co.com.proyecto.interaction.SeleccionarMetodo;
@@ -43,7 +44,13 @@ public class JsonPlaceStepDefinitions {
                     .orComplainWith(Exceptions.class,Mensaje.MSG_ERR_ID.getMensaje())); 
     }
 
-
+    @Entonces("verifico el resultado del metodo y con el codigo {int} {int}")
+    public void verificoElResultadoDelMetodoYConElCodigo(Integer codigo, Integer id) {
+        theActorInTheSpotlight().should(seeThatResponse(
+            "El codigo exitoso", response -> response.statusCode(codigo)),
+            seeThat(ValidacionIdActualizar.response(), Matchers.is(id))
+                    .orComplainWith(Exceptions.class,Mensaje.MSG_ERR_ID.getMensaje())); 
+    }
     
     
  

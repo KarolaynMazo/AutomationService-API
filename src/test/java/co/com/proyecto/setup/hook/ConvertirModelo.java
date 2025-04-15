@@ -10,6 +10,8 @@ public class ConvertirModelo {
     public Informacion convertir(Map<String,String> data){
         return Informacion.builder()
         .id(data.get("Id"))
+        .title(data.get("Title"))
+        .body(data.get("Body"))
         .build();
     }
 }

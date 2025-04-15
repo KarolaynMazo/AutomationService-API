@@ -2,7 +2,13 @@
 
 # 💡 Nombre del Proyecto 💡
 
-__Ejemplo: Automatización Web Demoblaze page
+_Ejemplo_: Automatización servicios Api 
+
+GET 
+POST 
+PATCH 
+
+URL: https://jsonplaceholder.typicode.com/guide/
 
 
 # 👓 Informacion del Autor 👓
@@ -21,13 +27,9 @@ __Ejemplo: Automatización Web Demoblaze page
 
 # 🎨Descripcion de la automatización
 
-_Proyecto de automatizacion web de paginas publicas. 
-
-Se tiene un configuracion para elegir el navegador a ejecutar entre chrome o edge, para elegir el navegador a usar se envia como varible de entorno. 
+_Proyecto de automatizacion de servicios con serenity rest_ 
 
 comando de ejecución: 
-Edge:
-gradle clean test --tests Demoblaze -Denviroments=edge 
 
-Chrome:
-gradle clean test --tests Demoblaze -Denviroments=chrome
+gradle clean test --tests JsonPlaceHolder
+

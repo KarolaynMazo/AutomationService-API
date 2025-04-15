@@ -9,8 +9,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         glue = {"co.com.proyecto.stepdefinitions","co.com.proyecto.setup"},
         features = "src/test/resources/features/json_place_holder.feature",
-        snippets = SnippetType.CAMELCASE
-     //   tags = "@Segundo"
+        snippets = SnippetType.CAMELCASE,
+        tags = "@Segundo"
 )
 
 public class JsonPlaceHolder {
