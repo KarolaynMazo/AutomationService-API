@@ -1,0 +1,27 @@
+# Archivos y configuraciones de Visual Studio Code
+.vscode/
+
+# Archivos de compilación y dependencias de Gradle
+.gradle/
+build/
+
+# Archivos de configuración específicos de Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Cache y configuraciones de Serenity BDD
+.serenity/
+target/
+
+# Archivos generados por el sistema operativo
+Thumbs.db
+.DS_Store
+
+# Logs y archivos temporales
+*.log
+*.tmp
+
+# Variables y configuraciones locales
+.env
