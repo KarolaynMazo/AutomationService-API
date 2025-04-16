@@ -1,8 +1,8 @@
+# 💡 Projects Name 💡
 
+_Example_: Automation Services (API)
 
-# 💡 Nombre del Proyecto 💡
-
-_Ejemplo_: Automatización servicios Api 
+METHODS: 
 
 GET 
 POST 
@@ -11,25 +11,20 @@ PATCH
 URL: https://jsonplaceholder.typicode.com/guide/
 
 
-# 👓 Informacion del Autor 👓
-|Autor|
-|--|
-| Karolayn Mazo |
+# 👓 Author Information👓
+|Author|Email|
+|--|--|
+| Karolayn Mazo |Karolaynmazo@gmail.com|
 
-# 📋 Pre-requisitos 📋
+# 📋 Pre-requirements 📋
 
 - Java 17
 - Lombok
 - VisualStudio Code
-- Gradle, versiones 8
-- Navegadores, edge, chrome
+- Gradle 8
+- browsers, Edge, Chrome
 - Serenity BDD, Screenplay
 
-# 🎨Descripcion de la automatización
+# 🎨Automation Description
 
-_Proyecto de automatizacion de servicios con serenity rest_ 
-
-comando de ejecución: 
-
-gradle clean test --tests JsonPlaceHolder
-
+Automation Services (API) project using Serenity rest and Assured rest, with different methods as a POST, GET, PATCH. 

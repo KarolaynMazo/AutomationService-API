@@ -1,36 +1,36 @@
-#Author: Karolayn.mazo@gmail.com
-# language: es
-Característica: Yo como analista de automatizacion
-  requiero probar el CRUD de la API jsonplaceholder
+#Author: Karolaynmazo@gmail.com
 
-  Esquema del escenario: Analista desea probar los metodos get relacionados al Api
-    Dado que se consume el api
-    Cuando se determina el "GET" para probar y se ingresan los datos correspondientes
+Feature: As QA Analyst
+      I want to test the API CRUD of JsonPlaceHolder
+      So that verify the quality of the api
+
+  
+  Scenario Outline: The Analyst want to test the GET path
+    Given that the request service is made
+    When testing the "GET" method with the following data
       | Id   |
       | <Id> |
-    Entonces verifico el resultado del metodo <Id>
+    Then it check the result <Id>
 
-    Ejemplos:
-      | Id | Codigo |
-      |  2 |    200 |
+  Examples:
+    | Id | Code|
+    |  2 |    200 |
 
-  @Segundo
-  Esquema del escenario: Analista desea probar los metodo Post relacionados al Api
-    Dado que se consume el api
-    Cuando se determina el "POST" para probar y se ingresan los datos correspondientes
+@Segundo
+  Scenario Outline: The Analyst want to test the GET path
+    Given that the request service is made
+    When testing the "POST" method with the following data
       | Title   | Body   |
       | <Title> | <Body> |
-    Entonces verifico el resultado del metodo y con el codigo 201 <Id>
+   Then it check the result with the code 201 and <Id>
 
-    Ejemplos:
+  Examples:
       | Title     | Body                      | Id  |
       | New movie | New cinema and new movies | 101 |
-      
-@Segundo
-  Escenario: Analista desea probar los metodo PATCH relacionados al Api
-    Dado que se consume el api
-    Cuando se determina el "PATCH" para probar y se ingresan los datos correspondientes
-      | Id | Title |
-      |  1 | Hola  |
-  Entonces verifico el resultado del metodo y con el codigo 200 1
 
+  Scenario: The Analyst want to test the PATCH path
+    Given that the request service is made
+    When testing the "PATCH" method with the following data
+      | Id   |
+      | 1 |
+    Then it check the result with the code 200 and 1
